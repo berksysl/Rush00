@@ -6,7 +6,7 @@
 /*   By: tsoysal <tsoysal@42kocaeli.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/27 15:25:08 by tsoysal           #+#    #+#             */
-/*   Updated: 2021/11/27 15:29:23 by tsoysal          ###   ########.fr       */
+/*   Updated: 2021/11/27 16:38:50 by tsoysal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,10 @@ void	last_line(int x, int y)
 
 void	rush(int x, int y)
 {	
-	first_line(x, y);
-	middle_lines(x, y);
-	last_line(x, y);
+	if (x > 0 && y > 0)
+	{
+		first_line(x, y);
+		middle_lines(x, y);
+		last_line(x, y);
+	}
 }
